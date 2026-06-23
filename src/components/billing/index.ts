@@ -1,5 +1,6 @@
 export { PackageCard, type PackageCardProps } from './PackageCard'
 export { QuotaCard, type QuotaCardProps } from './QuotaCard'
+export { QuotaExhaustedBanner, type QuotaExhaustedBannerProps } from './QuotaExhaustedBanner'
 export { ScenarioCard, type ScenarioCardProps, type ScenarioTone } from './ScenarioCard'
 export { GuideBubble, type GuideBubbleProps, type BubbleArrow } from './GuideBubble'
 export { ModelDropdown, type ModelDropdownProps } from './ModelDropdown'

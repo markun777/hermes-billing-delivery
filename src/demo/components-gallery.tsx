@@ -21,6 +21,7 @@ import {
   PackageCard,
   PayCard,
   QuotaCard,
+  QuotaExhaustedBanner,
   ScenarioCard
 } from '@/components/billing'
 import {
@@ -54,6 +55,7 @@ function Section({ title, count, children }: { title: string; count: string; chi
 function Gallery() {
   const [selectedModel, setSelectedModel] = useState(demoModelOptions[0].id)
   const [discoverTab, setDiscoverTab] = useState(demoDiscoverTabs[0].id)
+  const [showQuotaBanner, setShowQuotaBanner] = useState(true)
   const selectedLabel = useMemo(
     () => demoModelOptions.find(option => option.id === selectedModel)?.label ?? demoModelPanel.modelName,
     [selectedModel]
@@ -107,6 +109,25 @@ function Gallery() {
             {demoQuotas.map(quota => (
               <QuotaCard key={quota.id} quota={quota} />
             ))}
+          </div>
+        </Section>
+
+        <Section title="QuotaExhaustedBanner · 额度用完提示条" count="状态条 / 充值入口">
+          <div className="flex w-full max-w-[1076px] flex-col gap-3 rounded-[4px] border border-[#dfe6f3] bg-[#f7f9fd] p-6">
+            {showQuotaBanner ? (
+              <QuotaExhaustedBanner
+                onAction={() => console.log('open package recharge')}
+                onClose={() => setShowQuotaBanner(false)}
+              />
+            ) : (
+              <button
+                className="h-8 w-fit rounded-sm border border-[#c2d0f1] bg-white px-3 text-xs font-medium text-[#1359fd]"
+                onClick={() => setShowQuotaBanner(true)}
+                type="button"
+              >
+                重新显示提示条
+              </button>
+            )}
           </div>
         </Section>
 

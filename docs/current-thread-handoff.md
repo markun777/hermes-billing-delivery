@@ -27,29 +27,30 @@
 ## 代码入口
 
 - `apps/desktop/src/app/index.tsx` — 主应用
-- `apps/desktop/src/components/billing/` — 14 个产品组件
+- `apps/desktop/src/components/billing/` — 15 个产品组件
 - `apps/desktop/src/demo/components-gallery.tsx` — 组件库 Gallery
 - `apps/desktop/components-gallery.html` — Gallery 入口 HTML
 - `apps/desktop/public/billing-assets/` — 图标图片资源
 
-## 组件清单（14 个）
+## 组件清单（15 个）
 
-| 组件 | 文件 |
-|---|---|
-| ModelPanel | 侧栏模型选择面板（含 Figma 图标、下拉箭头状态切换）|
-| ModelDropdown | 模型下拉列表（gap-0.5 间距）|
-| HomeContent | 首页场景预设 |
-| **PackageCard** | 套餐卡（已按 Figma 39:907 重写：4 卡横排、渐变描边高亮、badge 24px/12px、check 图标 features）|
-| PayCard | 支付卡（min-h-[560px]、关闭按钮 #94A3B8 hover 圆形底）|
-| QuotaCard | 额度卡（多次购买 80px 行高、justify-center 对齐、单卡 104px 无回归）|
-| ConsumptionList | 模型用量排行 |
-| OrderCard | 订单与开票 |
-| ScenarioCard | 发现场景卡（w-full min-w-0 max-w-[360px]）|
-| GuideBubble | 新手引导气泡 |
-| **DiscoverPanel** | 发现页（8 Tab + 14 场景卡 Grid 布局）|
-| types.ts | 共享类型（含 PackageBadge、QuotaPurchase 等）|
-| data.ts | Gallery 演示数据（demoPackages 已更新为轻享版/标准版/专业版/旗舰版）|
-| index.ts | 统一导出 |
+| 组件                     | 文件                                                                                           |
+| ------------------------ | ---------------------------------------------------------------------------------------------- |
+| ModelPanel               | 侧栏模型选择面板（含 Figma 图标、下拉箭头状态切换）                                            |
+| ModelDropdown            | 模型下拉列表（gap-0.5 间距）                                                                   |
+| HomeContent              | 首页场景预设                                                                                   |
+| **PackageCard**          | 套餐卡（已按 Figma 39:907 重写：4 卡横排、渐变描边高亮、badge 24px/12px、check 图标 features） |
+| PayCard                  | 支付卡（min-h-[560px]、关闭按钮 #94A3B8 hover 圆形底）                                         |
+| QuotaCard                | 额度卡（多次购买 80px 行高、justify-center 对齐、单卡 104px 无回归）                           |
+| **QuotaExhaustedBanner** | 额度用完状态条（780×44、独立 info/close 切图、支持打开充值套餐和关闭）                         |
+| ConsumptionList          | 模型用量排行                                                                                   |
+| OrderCard                | 订单与开票                                                                                     |
+| ScenarioCard             | 发现场景卡（w-full min-w-0 max-w-[360px]）                                                     |
+| GuideBubble              | 新手引导气泡                                                                                   |
+| **DiscoverPanel**        | 发现页（8 Tab + 14 场景卡 Grid 布局）                                                          |
+| types.ts                 | 共享类型（含 PackageBadge、QuotaPurchase 等）                                                  |
+| data.ts                  | Gallery 演示数据（demoPackages 已更新为轻享版/标准版/专业版/旗舰版）                           |
+| index.ts                 | 统一导出                                                                                       |
 
 ## 启动方式
 
@@ -70,7 +71,7 @@ npm run dev:renderer
 
 ## 交付件
 
-`~/Hermes Agent/hermes-billing-delivery/` — 40 文件 464KB，含 README 接入说明。每次修改组件后需同步。
+`~/Hermes Agent/hermes-billing-delivery/` — 含 README 接入说明。每次修改组件后需同步并推送 GitHub。
 
 ## Git 状态
 
