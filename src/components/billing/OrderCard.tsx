@@ -55,10 +55,10 @@ export function OrderCard({ order, onInvoice, className }: OrderCardProps) {
             <span className={cn('truncate text-[14px] text-[#0f172a]', valueClassName)}>{value}</span>
           </div>
         ))}
-        <div className="flex w-[88px] shrink-0">
+        <div className="flex w-[88px] shrink-0 items-end self-stretch">
           {canInvoice ? (
             <button
-              className="flex h-6 w-full items-center justify-center rounded-[2px] border border-[rgba(188,205,232,0.56)] bg-[#f8fafc] px-4 text-[14px] font-normal whitespace-nowrap text-[#475569] hover:bg-[#f1f5f9]"
+              className="flex h-7 w-full items-center justify-center rounded-[2px] border border-[rgba(188,205,232,0.56)] bg-[#f8fafc] px-4 text-[14px] font-normal whitespace-nowrap text-[#475569] hover:bg-[#f1f5f9]"
               onClick={() => onInvoice?.(order.id)}
               type="button"
             >
