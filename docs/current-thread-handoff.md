@@ -39,7 +39,7 @@
 | ModelPanel               | 侧栏模型选择面板（含 Figma 图标、下拉箭头状态切换）                                            |
 | ModelDropdown            | 模型下拉列表（gap-0.5 间距）                                                                   |
 | HomeContent              | 首页场景预设                                                                                   |
-| **PackageCard**          | 套餐卡（已按 Figma 39:907 同步：桌面 4 卡横排、窄屏自动换行、选中态 1px 描边、卡内 20px/24px 间距、badge 24px/12px、check 图标 features） |
+| **PackageCard**          | 套餐卡（已按 Figma 39:907 同步：桌面 4 卡横排、窄屏自动换行、内容自动换行并撑高、选中态 1px 描边、卡内 20px/24px 间距、badge 24px/12px、check 图标 features） |
 | PayCard                  | 支付卡（min-h-[560px]、关闭按钮 #94A3B8 hover 圆形底）                                         |
 | QuotaCard                | 额度卡（多次购买 80px 行高、justify-center 对齐、单卡 104px 无回归）                           |
 | **QuotaExhaustedBanner** | 额度用完状态条（780×44、独立 info/close 切图、支持打开充值套餐和关闭）                         |

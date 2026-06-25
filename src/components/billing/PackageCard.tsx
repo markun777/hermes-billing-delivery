@@ -39,13 +39,15 @@ function CardInner({ tier, onBuy }: Omit<PackageCardProps, 'className'>) {
 
         <div className="flex flex-1 flex-col gap-4">
           <span className="text-[40px] font-bold leading-[normal] text-[#0f172a]">¥ {tier.price}</span>
-          <p className="truncate text-[14px] leading-[22px] text-[rgba(0,0,0,0.6)]">{tier.subtitle}</p>
+          <p className="text-[14px] leading-[22px] break-words text-[rgba(0,0,0,0.6)]">{tier.subtitle}</p>
           {tier.features && tier.features.length > 0 ? (
             <ul className="flex flex-col gap-1">
               {tier.features.map((feature, i) => (
-                <li className="flex items-center gap-1" key={i}>
-                  <img alt="" className="size-[18px] shrink-0" src="/billing-assets/package-check.svg" />
-                  <span className="truncate text-[14px] leading-[22px] text-[rgba(0,0,0,0.6)]">{feature}</span>
+                <li className="flex items-start gap-1" key={i}>
+                  <img alt="" className="mt-0.5 size-[18px] shrink-0" src="/billing-assets/package-check.svg" />
+                  <span className="min-w-0 flex-1 text-[14px] leading-[22px] break-words text-[rgba(0,0,0,0.6)]">
+                    {feature}
+                  </span>
                 </li>
               ))}
             </ul>
@@ -73,7 +75,7 @@ export function PackageCard({ tier, onBuy, className }: PackageCardProps) {
     return (
       <div
         className={cn(
-          'h-full min-h-[360px] min-w-[220px] max-h-[480px] rounded-[4px] border border-[#708aff]',
+          'h-full min-h-[360px] min-w-[220px] rounded-[4px] border border-[#708aff]',
           className
         )}
       >
@@ -85,7 +87,7 @@ export function PackageCard({ tier, onBuy, className }: PackageCardProps) {
   return (
     <div
       className={cn(
-        'h-full min-h-[360px] min-w-[220px] max-h-[480px] rounded-[4px] border border-[rgba(184,199,229,0.6)]',
+        'h-full min-h-[360px] min-w-[220px] rounded-[4px] border border-[rgba(184,199,229,0.6)]',
         className
       )}
     >
