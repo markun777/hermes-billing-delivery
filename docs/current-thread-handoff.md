@@ -44,7 +44,7 @@
 | QuotaCard                | 额度卡（多次购买 80px 行高、justify-center 对齐、单卡 104px 无回归）                           |
 | **QuotaExhaustedBanner** | 额度用完状态条（780×44、独立 info/close 切图、支持打开充值套餐和关闭）                         |
 | ConsumptionList          | 模型用量排行                                                                                   |
-| OrderCard                | 订单与开票                                                                                     |
+| OrderCard                | 历史订单列表行（Figma 115:5912，8px 列表间距、12px 字段标签、14px 字段值、88px 开票按钮槽位）  |
 | ScenarioCard             | 发现场景卡（w-full min-w-0 max-w-[360px]）                                                     |
 | GuideBubble              | 新手引导气泡                                                                                   |
 | **DiscoverPanel**        | 发现页（8 Tab + 14 场景卡 Grid 布局）                                                          |

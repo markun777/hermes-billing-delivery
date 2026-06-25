@@ -135,11 +135,17 @@ function Gallery() {
           <ConsumptionList className="max-w-[1076px]" expiry="2026-07-01" models={demoModels} packageName="套餐一" />
         </Section>
 
-        <Section title="OrderCard · 订单卡" count="订单 / 开票">
-          <div className="flex w-full max-w-[1076px] flex-col gap-4">
-            {demoOrders.map(order => (
-              <OrderCard key={order.id} order={order} />
-            ))}
+        <Section title="OrderCard · 历史订单" count="订单 / 开票">
+          <div className="flex w-full max-w-[1076px] flex-col gap-4 rounded-[4px] border border-[#c6d2f2] bg-[#f2f4f8] p-6">
+            <div className="flex items-center gap-2">
+              <span className="text-[20px] leading-none text-black">←</span>
+              <span className="text-[16px] font-bold text-black">历史订单</span>
+            </div>
+            <div className="flex flex-col gap-2">
+              {demoOrders.map(order => (
+                <OrderCard key={order.id} order={order} />
+              ))}
+            </div>
           </div>
         </Section>
 
