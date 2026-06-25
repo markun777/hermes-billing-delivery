@@ -86,12 +86,12 @@ function Gallery() {
 
         <Section title="PackageCard · 套餐卡" count="充值 / 支付">
           <div className="flex w-full flex-col items-center gap-12 rounded-[4px] border border-[#c6d2f2] bg-[#f8fafe] p-12">
-            <div className="flex items-center justify-center gap-5">
+            <div className="flex flex-wrap items-center justify-center gap-5 text-center">
               <img alt="" className="size-6 shrink-0" src="/billing-assets/package-ornament.svg" />
               <span className="text-[28px] font-bold leading-[normal] text-[#111827]">热门套餐推荐</span>
               <img alt="" className="size-6 shrink-0" src="/billing-assets/package-ornament.svg" />
             </div>
-            <div className="grid w-full grid-cols-4 gap-4 py-12">
+            <div className="grid w-full grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-4 py-12">
               {demoPackages.map(tier => (
                 <PackageCard key={tier.id} tier={tier} />
               ))}
