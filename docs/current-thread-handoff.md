@@ -39,7 +39,7 @@
 | ModelPanel               | 侧栏模型选择面板（含 Figma 图标、下拉箭头状态切换）                                            |
 | ModelDropdown            | 模型下拉列表（gap-0.5 间距）                                                                   |
 | HomeContent              | 首页场景预设                                                                                   |
-| **PackageCard**          | 套餐卡（已按 Figma 39:907 重写：4 卡横排、渐变描边高亮、badge 24px/12px、check 图标 features） |
+| **PackageCard**          | 套餐卡（已按 Figma 39:907 同步：4 卡横排、选中态 1px 描边、卡内 20px/24px 间距、badge 24px/12px、check 图标 features） |
 | PayCard                  | 支付卡（min-h-[560px]、关闭按钮 #94A3B8 hover 圆形底）                                         |
 | QuotaCard                | 额度卡（多次购买 80px 行高、justify-center 对齐、单卡 104px 无回归）                           |
 | **QuotaExhaustedBanner** | 额度用完状态条（780×44、独立 info/close 切图、支持打开充值套餐和关闭）                         |
@@ -67,7 +67,7 @@ npm run dev:renderer
 - 外层容器：无 max-w 限制，跟浏览器宽度自适应
 - Section 使用 `flex flex-wrap` 布局子组件
 - ScenarioCard 和 DiscoverPanel 内的场景卡使用 CSS Grid `repeat(auto-fill, minmax(224px, 1fr))` 保证等宽
-- PackageCard 场景示例：外层 `p-8`(32px)、卡片区 `py-10`(40px)、标题到卡片 `gap-12`(48px)
+- PackageCard 场景示例：外层 `p-12`(48px)、卡片区 `py-12`(48px)、标题到卡片 `gap-12`(48px)
 
 ## 交付件
 
