@@ -67,7 +67,7 @@ npm run dev:renderer
 - 外层容器：无 max-w 限制，跟浏览器宽度自适应
 - Section 使用 `flex flex-wrap` 布局子组件
 - ScenarioCard 和 DiscoverPanel 内的场景卡使用 CSS Grid `repeat(auto-fill, minmax(224px, 1fr))` 保证等宽
-- PackageCard 场景示例：外层 `p-12`(48px)、卡片区 `py-12`(48px)、标题到卡片 `gap-12`(48px)、卡片网格 `repeat(auto-fit,minmax(220px,1fr))`
+- PackageCard 场景示例：外层 `pt-20`(80px)、`pb-[106px]`、`px-12`(48px)、标题组含 16px 副标题、标题组到卡片 `gap-[80px]`、卡片网格 `repeat(auto-fit,minmax(220px,1fr))`
 
 ## 交付件
 

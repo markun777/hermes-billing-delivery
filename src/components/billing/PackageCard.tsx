@@ -75,7 +75,7 @@ export function PackageCard({ tier, onBuy, className }: PackageCardProps) {
     return (
       <div
         className={cn(
-          'h-full min-h-[360px] min-w-[220px] rounded-[4px] border border-[#708aff]',
+          'h-full min-h-[360px] min-w-[220px] rounded-[4px] border border-[rgba(0,83,253,0.6)]',
           className
         )}
       >
