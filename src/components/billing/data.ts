@@ -140,11 +140,8 @@ export const demoModelPanel: ModelPanelState = {
 }
 
 export const demoModels: ModelUsage[] = [
-  { id: 'm0', name: 'DeepSeek V4.5 Pro', tokens: '1,240 万 Token', cost: '¥0.96', pct: 100, discount: '6折' },
-  { id: 'm1', name: 'Qwen3 Max', tokens: '1,520 万 Token', cost: '¥0.63', pct: 66 },
-  { id: 'm2', name: 'Claude Sonnet 4.6', tokens: '386 万 Token', cost: '¥0.48', pct: 50 },
-  { id: 'm3', name: 'Kimi K2', tokens: '690 万 Token', cost: '¥0.42', pct: 44 },
-  { id: 'm4', name: 'GLM-4.6', tokens: '540 万 Token', cost: '¥0.28', pct: 29 }
+  { id: 'm0', name: 'DeepSeek V4.5 Pro', tokens: '1,240 万 Token', cost: '¥6.96', pct: 94, discount: '6折' },
+  { id: 'm4', name: 'GLM-4.6', tokens: '540 万 Token', cost: '¥0.28', pct: 27 }
 ]
 
 export const demoOrders: OrderRecord[] = [
