@@ -12,14 +12,14 @@ export function HomeContent({ presets, onPresetClick, className }: HomeContentPr
   return (
     <section
       className={cn(
-        'flex h-[685px] w-full flex-col items-center justify-center gap-12 bg-[#f7f9fd] px-24 pt-10',
+        'flex h-[685px] w-full flex-col items-center justify-center gap-12 bg-[#f7f9fd] pt-10',
         className
       )}
       data-slot="home-content"
     >
       <img alt="HERMES AGENT" className="h-[65px] w-[458px]" src="/billing-assets/hermes-agent-logo.svg" />
 
-      <div className="flex w-full items-start gap-3">
+      <div className="flex w-full max-w-[780px] items-start gap-3">
         {presets.map(preset => (
           <button
             className="flex min-w-0 flex-1 flex-col items-start gap-3 overflow-hidden rounded-[4px] border border-[#c4d0f1] bg-white px-6 py-4 text-left hover:bg-[#fbfcff]"
