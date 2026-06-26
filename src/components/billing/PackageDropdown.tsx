@@ -14,7 +14,7 @@ export function PackageDropdown({ options, selectedId, onSelect, onStatusClick, 
   return (
     <div
       className={cn(
-        'flex w-[198px] flex-col items-start rounded-[4px] border border-[#c2d0f1] bg-[#fdfdfd] p-[3px] shadow-[0_2px_4px_rgba(0,0,0,0.08)]',
+        'flex w-[198px] flex-col items-start gap-0.5 rounded-[4px] border border-[#c2d0f1] bg-[#fdfdfd] p-[3px] shadow-[0_2px_4px_rgba(0,0,0,0.08)]',
         className
       )}
       data-slot="package-dropdown"
