@@ -39,7 +39,12 @@ function CardInner({ tier, onBuy }: Omit<PackageCardProps, 'className'>) {
 
         <div className="flex flex-1 flex-col gap-4">
           <span className="text-[40px] font-bold leading-[normal] text-[#0f172a]">¥ {tier.price}</span>
-          <p className="text-[14px] leading-[22px] break-words text-[rgba(0,0,0,0.6)]">{tier.subtitle}</p>
+          <div className="flex flex-col gap-2">
+            <p className="text-[14px] leading-[22px] break-words text-[rgba(0,0,0,0.6)]">{tier.subtitle}</p>
+            {tier.validity ? (
+              <p className="break-words text-[11px] leading-[normal] text-[rgba(0,0,0,0.28)]">{tier.validity}</p>
+            ) : null}
+          </div>
           {tier.features && tier.features.length > 0 ? (
             <ul className="flex flex-col gap-1">
               {tier.features.map((feature, i) => (

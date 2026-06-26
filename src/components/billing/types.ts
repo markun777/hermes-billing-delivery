@@ -16,6 +16,8 @@ export interface PackageTier {
   price: number
   /** Short subtitle, e.g. "适合新手入门". */
   subtitle: string
+  /** Validity description, e.g. "有效期从购买起 1 个月". */
+  validity?: string
   /** Discount / label badges (supports multiple). */
   badges?: PackageBadge[]
   /** Feature bullets (rendered with check icons). */

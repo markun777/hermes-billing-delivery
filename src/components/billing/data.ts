@@ -19,6 +19,7 @@ export const demoPackages: PackageTier[] = [
     name: '轻享版',
     price: 29,
     subtitle: '适合新手入门',
+    validity: '有效期从购买起 1 个月',
     badges: [{ label: '8折', tone: 'blue' }],
     features: ['轻松入门AI', '日常问答，一键搞定', '看图识别，省时省力']
   },
@@ -27,6 +28,7 @@ export const demoPackages: PackageTier[] = [
     name: '标准版',
     price: 39,
     subtitle: '适合职场办公',
+    validity: '有效期从购买起 1 个月',
     badges: [{ label: '7折', tone: 'blue' }],
     features: ['性价比之选', '文档处理，效率翻倍', '截图识别，一步到位']
   },
@@ -35,6 +37,7 @@ export const demoPackages: PackageTier[] = [
     name: '专业版',
     price: 59,
     subtitle: '适合内容生成',
+    validity: '有效期从购买起 1 个月',
     badges: [{ label: '推荐', tone: 'amber' }, { label: '6折', tone: 'blue' }],
     highlighted: true,
     features: ['创作效率翻倍', '图片/视频/音频全模态生成', '开发者+创作者首选']
@@ -44,6 +47,7 @@ export const demoPackages: PackageTier[] = [
     name: '旗舰版',
     price: 99,
     subtitle: '适合重度AI用户',
+    validity: '有效期从购买起 1 个月',
     badges: [{ label: '5.5折', tone: 'blue' }],
     features: ['能力无上限', '图片/视频/音频全模态生成', '全模型5.5折省到底']
   }
