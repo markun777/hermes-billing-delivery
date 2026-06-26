@@ -102,11 +102,11 @@ function Gallery() {
             <div className="flex flex-col items-center gap-4 text-center">
               <div className="flex flex-wrap items-center justify-center gap-5">
                 <img alt="" className="size-6 shrink-0" src="/billing-assets/package-ornament.svg" />
-                <span className="text-[28px] font-bold leading-[normal] text-[#111827]">热门套餐推荐</span>
+                <span className="text-[28px] font-bold leading-[normal] text-[#111827]">聚合15+主流大模型，Token低至5.5折</span>
                 <img alt="" className="size-6 shrink-0" src="/billing-assets/package-ornament.svg" />
               </div>
               <p className="max-w-full text-[16px] leading-[normal] text-[rgba(0,0,0,0.45)]">
-                聚合15+主流大模型，Token低至5.5折，阿里云百炼平台全量模型，免API，通享全场
+                阿里云百炼平台全量模型，免API，通享全场
               </p>
             </div>
             <div className="grid w-full grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-4">
