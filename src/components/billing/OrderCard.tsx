@@ -23,7 +23,7 @@ export interface OrderCardProps {
 }
 
 export function OrderCard({ order, onInvoice, className }: OrderCardProps) {
-  const canInvoice = order.status === 'success' && !order.invoiced
+  const canInvoice = (order.status === 'success' || order.status === 'expired') && !order.invoiced
   const fields = [
     ['支付方式', order.payMethod, 'font-medium'],
     ['充值额度', order.amount, 'font-bold'],
