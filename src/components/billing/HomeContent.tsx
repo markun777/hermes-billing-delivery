@@ -19,7 +19,7 @@ export function HomeContent({ presets, onPresetClick, className }: HomeContentPr
     >
       <img alt="HERMES AGENT" className="h-[65px] w-[458px]" src="/billing-assets/hermes-agent-logo.svg" />
 
-      <div className="flex w-[800px] max-w-[880px] items-start gap-4">
+      <div className="flex w-[800px] max-w-[880px] items-start gap-3">
         {presets.map(preset => (
           <button
             className="flex min-w-0 flex-1 flex-col items-start gap-3 overflow-hidden rounded-[4px] border border-[#c4d0f1] bg-white px-6 py-4 text-left hover:bg-[#fbfcff]"
