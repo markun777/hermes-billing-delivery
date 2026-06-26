@@ -19,6 +19,7 @@ import {
   ModelPanel,
   OrderCard,
   PackageCard,
+  PackageDropdown,
   PayCard,
   QuotaCard,
   QuotaExhaustedBanner,
@@ -32,6 +33,7 @@ import {
   demoModelPanel,
   demoModels,
   demoOrders,
+  demoPackageOptions,
   demoPackages,
   demoPaymentOrder,
   demoQuotas,
@@ -54,8 +56,13 @@ function Section({ title, count, children }: { title: string; count: string; chi
 
 function Gallery() {
   const [selectedModel, setSelectedModel] = useState(demoModelOptions[0].id)
+  const [selectedPackage, setSelectedPackage] = useState(demoPackageOptions[0].id)
   const [discoverTab, setDiscoverTab] = useState(demoDiscoverTabs[0].id)
   const [showQuotaBanner, setShowQuotaBanner] = useState(true)
+  const selectedPackageLabel = useMemo(
+    () => demoPackageOptions.find(option => option.id === selectedPackage)?.label ?? demoModelPanel.tierName,
+    [selectedPackage]
+  )
   const selectedLabel = useMemo(
     () => demoModelOptions.find(option => option.id === selectedModel)?.label ?? demoModelPanel.modelName,
     [selectedModel]
@@ -73,7 +80,13 @@ function Gallery() {
       <div className="flex max-w-[1320px] flex-col gap-10">
         <Section title="ModelPanel / ModelDropdown · 侧栏模型区" count="侧栏 / 模型选择">
           <div className="flex min-h-[220px] items-start gap-8 rounded-[4px] border border-[#dfe6f3] bg-white p-6">
-            <ModelPanel state={{ ...demoModelPanel, modelName: selectedLabel }} />
+            <ModelPanel state={{ ...demoModelPanel, modelName: selectedLabel, tierName: selectedPackageLabel }} />
+            <PackageDropdown
+              onSelect={setSelectedPackage}
+              onStatusClick={id => console.log('open package purchase', id)}
+              options={demoPackageOptions}
+              selectedId={selectedPackage}
+            />
             <ModelDropdown options={demoModelOptions} onSelect={setSelectedModel} selectedId={selectedModel} />
           </div>
         </Section>

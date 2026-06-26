@@ -80,6 +80,14 @@ export interface ModelOption {
   disabled?: boolean
 }
 
+export interface PackageOption {
+  id: string
+  label: string
+  /** Right-side status/action text for unpurchased packages, e.g. "购买". */
+  statusLabel?: string
+  disabled?: boolean
+}
+
 export interface ModelPanelState {
   tierName: string
   modelName: string

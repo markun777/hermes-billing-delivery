@@ -5,6 +5,7 @@ import type {
   ModelPanelState,
   ModelUsage,
   OrderRecord,
+  PackageOption,
   PackageTier,
   PaymentOrder,
   QuotaPackage,
@@ -137,8 +138,16 @@ export const demoModelOptions: ModelOption[] = [
   { id: 'gpt-41', label: 'GPT-4.1' }
 ]
 
+export const demoPackageOptions: PackageOption[] = [
+  { id: 'free-trial', label: '免费体验套餐' },
+  { id: 'light', label: '轻享版' },
+  { id: 'standard', label: '标准版', statusLabel: '购买' },
+  { id: 'pro', label: '专业版', statusLabel: '购买' },
+  { id: 'flagship', label: '旗舰版', statusLabel: '购买' }
+]
+
 export const demoModelPanel: ModelPanelState = {
-  tierName: '套餐一',
+  tierName: '免费体验套餐',
   modelName: 'Deepseek V4.5 Pro',
   usedPct: 27.7
 }

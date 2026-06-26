@@ -4,6 +4,7 @@ export { QuotaExhaustedBanner, type QuotaExhaustedBannerProps } from './QuotaExh
 export { ScenarioCard, type ScenarioCardProps, type ScenarioTone } from './ScenarioCard'
 export { GuideBubble, type GuideBubbleProps, type BubbleArrow } from './GuideBubble'
 export { ModelDropdown, type ModelDropdownProps } from './ModelDropdown'
+export { PackageDropdown, type PackageDropdownProps } from './PackageDropdown'
 export { ModelPanel, type ModelPanelProps } from './ModelPanel'
 export { HomeContent, type HomeContentProps } from './HomeContent'
 export { PayCard, type PayCardProps } from './PayCard'
