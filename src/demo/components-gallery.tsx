@@ -191,24 +191,22 @@ function Gallery() {
           <div className="flex flex-col gap-2">
             <GuideBubble
               arrow="left"
+              desc="设好计划，智能体到点自动开工"
+              icon={<img alt="" className="size-10 max-w-none shrink-0" src="/billing-assets/guide-scheduled-task.png" />}
+              title="定时自动任务"
+            />
+            <GuideBubble
+              arrow="left"
               desc="一个套餐，畅用多款大模型"
               icon={<img alt="" className="size-10 max-w-none shrink-0" src="/billing-assets/guide-switch-model.png" />}
               title="随心切换模型"
             />
             <GuideBubble
-              arrow="left"
-              desc="设好计划，智能体到点自动开工"
-              icon={
-                <img alt="" className="size-10 max-w-none shrink-0" src="/billing-assets/guide-scheduled-task.png" />
-              }
-              nextLabel="知道了"
-              title="定时自动任务"
-            />
-            <GuideBubble
               arrow="bottom"
-              desc="用量、订单和到期时间都在这里查看"
+              desc="点任意卡片，马上体验一个任务"
               icon={<img alt="" className="size-10 max-w-none shrink-0" src="/billing-assets/guide-model-orders.png" />}
-              title="查看模型订单"
+              nextLabel="好的"
+              title="先试试这些示例"
             />
           </div>
         </Section>
