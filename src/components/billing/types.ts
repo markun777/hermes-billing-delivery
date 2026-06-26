@@ -107,7 +107,7 @@ export interface ModelUsage {
   discount?: string
 }
 
-export type OrderStatus = 'pending' | 'success' | 'failed'
+export type OrderStatus = 'pending' | 'success' | 'failed' | 'expired'
 
 export interface OrderRecord {
   id: string

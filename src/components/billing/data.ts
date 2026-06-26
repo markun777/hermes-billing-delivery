@@ -184,6 +184,15 @@ export const demoOrders: OrderRecord[] = [
     amount: '¥30.00',
     paid: '¥30.00',
     invoiced: true
+  },
+  {
+    id: 'hermes_e886f97053240cb9_7',
+    time: '2026/5/29 20:27:33',
+    status: 'expired',
+    payMethod: '微信/支付宝',
+    amount: '¥10.00',
+    paid: '¥10.00',
+    invoiced: false
   }
 ]
 

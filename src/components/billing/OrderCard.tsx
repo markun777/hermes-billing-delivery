@@ -5,13 +5,15 @@ import type { OrderRecord, OrderStatus } from './types'
 const STATUS_LABEL: Record<OrderStatus, string> = {
   pending: '待支付',
   success: '成功',
-  failed: '支付失败'
+  failed: '支付失败',
+  expired: '已过期'
 }
 
 const STATUS_TONE: Record<OrderStatus, { dot: string; text: string }> = {
   pending: { dot: 'bg-[#f97316]', text: 'text-[#f97316]' },
   success: { dot: 'bg-[#22c55e]', text: 'text-[#16a34a]' },
-  failed: { dot: 'bg-[#ef4444]', text: 'text-[#dc2626]' }
+  failed: { dot: 'bg-[#ef4444]', text: 'text-[#dc2626]' },
+  expired: { dot: 'bg-[#7da1b2]', text: 'text-[#7da1b2]' }
 }
 
 export interface OrderCardProps {
